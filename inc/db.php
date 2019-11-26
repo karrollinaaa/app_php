@@ -19,37 +19,33 @@ class Baza {
         $this->init_tables();
     }
 
-
     function init_tables() {
-        global $db, $kom;
         if (file_exists('baza/baza.sql')) {
             $q = "SELECT name FROM sqlite_master WHERE type='table' AND name='menu'";
-            $ret = array();
-            db_query($q, $ret);
-            if(empty($ret)) {
+            $this->db_query($q);
+            if(empty($this->ret)) {
                 $sql = file_get_contents('baza/baza.sql');
-                $db->exec($sql);
-                $kom[] = "Utworzono tabelę!";
+                $this->db->db_exec($sql);
+                $this->kom[] = "Utworzono tabelę!";
             }
         }
     }
 
-
-    function db_query($q, &$ret) {
-        global $db;
-        $r = null;
+    function db_query($q) {
         try {
-            $r = $db->query($q);
+            $this->ret = $this->db->query($q, $this->mode)->fetchAll();
         } catch(PDOexception $e) {
-            echo($e->getMEssage());
-            }
-        if ($r) {
-            $ret = $r->fetchAll();
-            return true;
+            $this->kom[] = 'Błąd: '.$e->getMessage()."\n";
         }
-        return false;
     }
     
+        function db_exec($q) {
+        try {
+            $this->db->exec($q);
+        } catch(PDOexception $e) {
+            $this->kom[] = 'Błąd: '.$e->getMessage()."\n";
+        }
+    }
     
 }
 
