@@ -12,7 +12,10 @@ require_once('inc/funkcje.php');
 
 $db = new Baza('baza/baza.db');
 
-echo "<h1>Aplikacja PHP</h1>";
+if(isset($_GET['id']))
+    $id = $_GET['id'];
+else
+    $ID = 1;
 
 $strona = array();
 
