@@ -12,8 +12,10 @@ require_once('inc/funkcje.php');
 
 $db = new Baza('baza/baza.db');
 
-echo "<h1>Aplikacja PHP</h>";
+echo "<h1>Aplikacja PHP</h1>";
 
-get_kom($db->kom);
+$strona = array();
+
+get_kom(Baza::$kom);
 
 ?>
