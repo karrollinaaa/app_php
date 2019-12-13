@@ -49,6 +49,9 @@ class Baza {
         }
     }
     
+    static public function db_lastID() {
+        return self::$db->lastInsertId();
+    }
 }
 
 ?>

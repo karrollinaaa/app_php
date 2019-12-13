@@ -4,9 +4,9 @@ function get_menu($id, &$strona) {
     Baza::db_query('SELECT * FROM menu');
     foreach (Baza::$ret as $t) {
         echo'
-<li class="nav-item active';
+<li class="nav-item';
 
-    if($t['id'] == $id {
+    if($t['id'] == $id) {
         echo ' active';
         $strona = $t;
     }
@@ -24,7 +24,7 @@ function get_page_title($strona) {
 
 function get_page_content($strona) {
     if (file_exists($strona['plik']))
-        include($strona['plik']));
+        include($strona['plik']);
     else
         include('404.html');
 }
@@ -32,6 +32,18 @@ function get_page_content($strona) {
 function get_kom($kom) {
     foreach ($kom as $v) {
         echo '<p class="text-info">'.$v.'</p>';
+    }
+}
+
+function clrtxt(&$el, $maxdl=30) {
+    if (is_array($el)) {
+        return array_map('clrtxt', $el);
+    } else {
+        $el = trim($el);
+        $el = substr($el, 0, $maxdl);
+        if (get_magic_quotes_gpc()) $el = stripslashes($el);
+        $el = htmlspecialchars($el, ENT_QUOTES);
+        return $el;
     }
 }
 

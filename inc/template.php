@@ -28,7 +28,7 @@
     <div class="container">
     	<div class="row">
     	   <div class="col">
-            <h1><?php get_page_title($strona); ?><h1>
+            <h1><?php get_page_title($strona); ?></h1>
                
 <?php
     get_page_content($strona);

@@ -23,3 +23,22 @@
 [29-Nov-2019 14:06:12 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/kl3ag1/public_html/app_php/inc/funkcje.php on line 10
 [29-Nov-2019 14:06:19 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/kl3ag1/public_html/app_php/inc/funkcje.php on line 10
 [29-Nov-2019 14:06:34 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/kl3ag1/public_html/app_php/inc/funkcje.php on line 10
+[29-Nov-2019 14:08:03 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/kl3ag1/public_html/app_php/inc/funkcje.php on line 10
+[29-Nov-2019 14:13:28 Europe/Warsaw] PHP Parse error:  syntax error, unexpected ')' in /home/kl3ag1/public_html/app_php/inc/funkcje.php on line 27
+[06-Dec-2019 12:54:33 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '(', expecting '{' in /home/kl3ag1/public_html/app_php/inc/users.php on line 3
+[06-Dec-2019 13:10:56 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '(', expecting '{' in /home/kl3ag1/public_html/app_php/inc/users.php on line 3
+[06-Dec-2019 13:10:56 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '(', expecting '{' in /home/kl3ag1/public_html/app_php/inc/users.php on line 3
+[06-Dec-2019 13:10:56 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '(', expecting '{' in /home/kl3ag1/public_html/app_php/inc/users.php on line 3
+[06-Dec-2019 13:38:43 Europe/Warsaw] PHP Notice:  Undefined variable: ok in /home/kl3ag1/public_html/app_php/userform.html on line 22
+[06-Dec-2019 13:45:28 Europe/Warsaw] PHP Notice:  Undefined variable: ok in /home/kl3ag1/public_html/app_php/userform.html on line 22
+[06-Dec-2019 13:46:45 Europe/Warsaw] PHP Notice:  Undefined variable: ok in /home/kl3ag1/public_html/app_php/userform.html on line 22
+[06-Dec-2019 13:47:00 Europe/Warsaw] PHP Notice:  Undefined variable: ok in /home/kl3ag1/public_html/app_php/userform.html on line 22
+[06-Dec-2019 14:00:47 Europe/Warsaw] PHP Warning:  session_start(): open(sesje/sess_mi02ah7aajkpl243a5qi86jbge, O_RDWR) failed: Nie ma takiego pliku ani katalogu (2) in /home/kl3ag1/public_html/app_php/inc/users.php on line 9
+[06-Dec-2019 14:00:47 Europe/Warsaw] PHP Warning:  session_start(): Failed to read session data: files (path: sesje) in /home/kl3ag1/public_html/app_php/inc/users.php on line 9
+[06-Dec-2019 14:00:48 Europe/Warsaw] PHP Warning:  session_start(): open(sesje/sess_mi02ah7aajkpl243a5qi86jbge, O_RDWR) failed: Nie ma takiego pliku ani katalogu (2) in /home/kl3ag1/public_html/app_php/inc/users.php on line 9
+[06-Dec-2019 14:00:48 Europe/Warsaw] PHP Warning:  session_start(): Failed to read session data: files (path: sesje) in /home/kl3ag1/public_html/app_php/inc/users.php on line 9
+[06-Dec-2019 14:00:49 Europe/Warsaw] PHP Warning:  session_start(): open(sesje/sess_mi02ah7aajkpl243a5qi86jbge, O_RDWR) failed: Nie ma takiego pliku ani katalogu (2) in /home/kl3ag1/public_html/app_php/inc/users.php on line 9
+[06-Dec-2019 14:00:49 Europe/Warsaw] PHP Warning:  session_start(): Failed to read session data: files (path: sesje) in /home/kl3ag1/public_html/app_php/inc/users.php on line 9
+[06-Dec-2019 14:02:40 Europe/Warsaw] PHP Warning:  session_start(): open(sesje/sess_mi02ah7aajkpl243a5qi86jbge, O_RDWR) failed: Nie ma takiego pliku ani katalogu (2) in /home/kl3ag1/public_html/app_php/inc/users.php on line 9
+[06-Dec-2019 14:02:40 Europe/Warsaw] PHP Warning:  session_start(): Failed to read session data: files (path: sesje) in /home/kl3ag1/public_html/app_php/inc/users.php on line 9
+[13-Dec-2019 13:04:07 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'unction' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST) in /home/kl3ag1/public_html/app_php/inc/users.php on line 12

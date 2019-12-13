@@ -7,8 +7,9 @@ CREATE TABLE menu (
 );
 
 INSERT INTO menu VALUES (NULL, 'Strona główna', 'glowna.html', 1);
-INSERT INTO menu VALUES (NULL, 'Użytkownicy', 'userform.html', 1);
-INSERT INTO menu VALUES (NULL, 'Wiadomości', 'wiadomosci.html', 1);
+INSERT INTO menu VALUES (NULL, 'Wiadomości', 'wiadomosci.html', 2);
+INSERT INTO menu VALUES (NULL, 'Zarejestruj', 'userform.html', 3);
+INSERT INTO menu VALUES (NULL, 'Zaloguj się', 'userlogin.html', 4);
 
 
 DROP TABLE IF EXISTS users;
@@ -17,7 +18,7 @@ CREATE TABLE users (
 	login CHAR(20),
     haslo CHAR(40),
     email VARCHAR(50),
-    data DATE
+    data DATE DEFAULT CERRENT_TIMESTAMP
 );
 
 
